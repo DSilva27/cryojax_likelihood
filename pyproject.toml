@@ -1,9 +1,7 @@
 [project]
-name = "cryojax_diffeo"
+name = "cryojax_likelihood"
 authors = [
-    {name = "David Silva Sanchez", email = "david.silva@yale.edu"},
-    {name = "Jack Wang"},
-    {name = "Sebaestien Lowy"}
+    {name = "cryoJAX Team"},
 ]
 
 description = "My package description"
@@ -42,9 +40,9 @@ dev = [
 ]
 
 [project.urls]
-Documentation = "https://github.com/DSilva27/Cryo-EM-SPA-guided-diffusion-models/blob/main/README.md"
-Issues = "https://github.com/DSilva27/Cryo-EM-SPA-guided-diffusion-models/issues"
-Source = "https://github.com/DSilva27/Cryo-EM-SPA-guided-diffusion-models/"
+Documentation = "https://github.com/DSilva27/cryojax_likelihood/blob/main/README.md"
+Issues = "https://github.com/DSilva27/cryojax_likelihood/issues"
+Source = "https://github.com/DSilva27/cryojax_likelihood/"
 
 
 [build-system]
@@ -55,7 +53,7 @@ build-backend = "hatchling.build"
 source = "vcs"
 
 [tool.hatch.build.hooks.vcs]
-version-file = "src/cryojax_diffeo/cryojax_diffeo_version.py"
+version-file = "src/cryojax_likelihood/cryojax_likelihood_version.py"
 
 [tool.ruff]
 extend-include = ["*.ipynb"]
@@ -77,9 +75,4 @@ line-length = 90
 [tool.pyright]
 reportIncompatibleMethodOverride = true
 reportIncompatibleVariableOverride = false  # Incompatible with eqx.AbstractVar
-include = ["cryojax_diffeo", "tests"]
-
-
-[project.scripts]
-guided_diff = "cryojax_diffeo.commands.rmsd_guidance:cli"
-simulate_data = "cryojax_diffeo.commands.simulate_data:main_cli"
+include = ["cryojax_likelihood", "tests"]
