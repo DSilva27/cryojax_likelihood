@@ -21,7 +21,6 @@ def loss_for_grid_search(
     volume: cxs.AbstractVolumeRepresentation,
     relion_stack: ParticleStackInfo,
 ) -> Float:
-    
     assert relion_stack["parameters"] is not None, (
         "relion_stack must have non None 'parameters' field."
     )

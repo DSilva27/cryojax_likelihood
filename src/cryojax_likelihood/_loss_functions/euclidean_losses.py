@@ -73,7 +73,7 @@ def likelihood_isotropic_gaussian_marginalized(
     dilated_mask: Optional[DilatedMask] = None,
     estimates_pose: bool = False,
     constant_args: float = 1.0,
-    per_particle_args = (),
+    per_particle_args=(),
 ) -> Float:
     """
     Compute the marginalized likelihood of a walker given a Relion stack using an

@@ -1,3 +1,6 @@
+from ._dilated_mask import (
+    DilatedMask as DilatedMask,
+)
 from ._loss_functions import (
     AbstractLikelihoodFn as AbstractLikelihoodFn,
     compute_likelihood_matrix as compute_likelihood_matrix,
@@ -11,7 +14,4 @@ from ._loss_functions import (
 )
 from ._pose_search import (
     global_SO3_hier_search as global_SO3_hier_search,
-)
-from ._dilated_mask import (
-    DilatedMask as DilatedMask,
 )
